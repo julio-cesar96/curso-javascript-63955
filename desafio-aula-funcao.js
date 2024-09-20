@@ -1,4 +1,6 @@
-function calculadora(numero1, numero2, operacao) {
+
+//arrow function
+const calculadoraArrowFunction = (numero1, numero2, operacao) => {
     if (operacao == "+") {
         return numero1 + numero2;
     }
@@ -15,6 +17,7 @@ function calculadora(numero1, numero2, operacao) {
         return numero1 / numero2;
     } else {
         return 0;
-    }
+    } 
+  
 }
-console.log(calculadora(10, 6, "+"));
+alert(calculadoraArrowFunction(5, 6, "+"));
