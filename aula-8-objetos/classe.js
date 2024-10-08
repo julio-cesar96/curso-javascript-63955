@@ -9,5 +9,10 @@ class Pessoa {
     }
 }
 
-const laura = new Pessoa("Laura", 37, 163);
-laura.seApresentar();
+
+const nomeDaPessoa = prompt("Qual é o seu nome?");
+const idadeDaPessoa = prompt("Qual é a sua idade");
+const alturaDaPessoa = prompt("Qual é a sua altura");
+
+const usuario = new Pessoa(nomeDaPessoa, idadeDaPessoa, alturaDaPessoa);
+usuario.seApresentar();
