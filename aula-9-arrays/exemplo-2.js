@@ -5,7 +5,7 @@ class Produto {
         this.vendido = false;
     }
     aplicarICMS() {
-        this.precos = this.preco * 1.21;
+        this.preco = this.preco * 1.21;
     }
 }
 
@@ -16,6 +16,6 @@ produtos.push(new Produto("pao de forma", "7"));
 
 for (const produto of produtos) {
     produto.aplicarICMS();
-    console.log(produtos);
+    console.log(produto);
 }
 
