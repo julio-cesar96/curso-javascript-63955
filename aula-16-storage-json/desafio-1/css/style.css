@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+input {
+    padding: 8px;
+    flex-grow: 1;
+}
+#lista {
+    margin-top: 20px;
+}
+.item {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
