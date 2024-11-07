@@ -3,29 +3,137 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    max-width: 600px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
+    background-color: #f5f5f5;
 }
-.container {
-    display: flex;
-    gap: 10px;
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.input-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
-button {
-    padding: 8px 16px;
-    cursor: pointer;
+
+.input-group {
+    margin-bottom: 15px;
 }
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
 input {
-    padding: 8px;
-    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
 }
-#lista {
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button {
+    padding: 12px 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-add {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-add:hover {
+    background-color: #45a049;
+}
+
+.btn-clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #da190b;
+}
+
+.lista-produtos {
     margin-top: 20px;
 }
+
 .item {
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.item h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.item button {
+    background-color: #ff4444;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.item button:hover {
+    background-color: #cc0000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .input-container {
+        padding: 15px;
+    }
+    
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
