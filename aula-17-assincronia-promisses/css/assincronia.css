@@ -1,0 +1,13 @@
+.popup {
+    display: none;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    background-color: bisque;
+}
+
+.popup-active {
+    display: block;
+}
