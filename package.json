@@ -1,0 +1,22 @@
+{
+  "name": "curso-javascript-63955",
+  "version": "1.0.0",
+  "description": "curso de javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julio-cesar96/curso-javascript-63955.git"
+  },
+  "author": "Julio Cesar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julio-cesar96/curso-javascript-63955/issues"
+  },
+  "homepage": "https://github.com/julio-cesar96/curso-javascript-63955#readme",
+  "dependencies": {
+    "luxon": "^3.5.0"
+  }
+}
